@@ -22,7 +22,7 @@
     "check": "npm run audit && ncu && npm outdated --depth 0",
     "test": "npm run build && mocha ./test/main.js",
     "validate": "npm run lint && npm test",
-    "prepare": "npm run build && npm run validate && npm run check",
+    "prepublishOnly": "npm run build && npm run validate && npm run check",
     "major": "pmm major",
     "minor": "pmm minor",
     "patch": "pmm patch"
